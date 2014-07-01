@@ -1,6 +1,7 @@
 package com.cronjoe.modtest;
 
 import com.cronjoe.modtest.configuration.ConfigurationHandler;
+import com.cronjoe.modtest.init.ModBlocks;
 import com.cronjoe.modtest.proxy.IProxy;
 import com.cronjoe.modtest.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -23,6 +24,7 @@ public class ModTest
     public void preInit(FMLPreInitializationEvent event)
     {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
