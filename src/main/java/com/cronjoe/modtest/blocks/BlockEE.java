@@ -7,9 +7,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
-public class GenericBlock extends Block
+public class BlockEE extends Block
 {
-    public GenericBlock (Material material)
+    public BlockEE(Material material)
     {
         super(material);
     }
